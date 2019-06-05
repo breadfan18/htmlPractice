@@ -2,3 +2,6 @@ If you want to put your page on the internet, then you need a web host.
 
 There are some free web hosting sites like wordpress.com
 
+The tag that's used to add hyperlinks is the anchor tag. which is just the letter a <a> </a>
+
+target tag - target tag can be used inside the anchor tag to say whether the link should open in a new tab. target = "_blank" means open in a new tab
