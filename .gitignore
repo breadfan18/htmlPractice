@@ -1,0 +1,54 @@
+# IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+out
+# Gradle
+.gradle
+build
+/build
+# Maven
+target
+dist
+node
+log/
+target/
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+test-output
+test.java
+
+# Eclipse
+.classpath
+.project
+.settings/
+.springBeans
+bin
+atlassian-ide-plugin.xml
+#SVN
+.svn
+/build/
+/bin/
+#EAF
+database/
+#JRebel
+rebel.xml
+#MISC
+dependency-reduced-pom.xml
+*.sw[op]
+.DS_Store
+/text/
+tmp/
+classes/
+test.log
+/logs/
+work/
+.bower-*
+dist/
+node_modules/
+bower_components/
+jspm_packages/
+.tmp/
