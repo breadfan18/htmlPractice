@@ -1,0 +1,16 @@
+h1{
+    color: blue;
+    font-family: Arial, Helvetica, serif;
+}
+
+p{
+    color: dimgrey;
+    font-family: Arial, sans-serif;
+}
+
+button{
+    background-color: aqua;
+    color: red;
+    font-family: Arial, serif;
+    font-size: 20px;
+}
