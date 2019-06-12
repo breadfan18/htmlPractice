@@ -12,10 +12,6 @@ button:hover {
     background: gray;
 }
 
-.menulist{
-    padding: 10px 10px;
-}
-
 
 button{
     display: inline;
@@ -23,12 +19,12 @@ button{
     color: white;
     font-family: Sans-serif, serif;
     font-size: 20px;
-    height: 60px;
+    height: 40px;
     width: 150px;
     line-height: 60px;
     margin: 25px 25px;
     text-align: center;
-    border: 0;
+    border-color: black;
     transition: all 0.3s ease 0s;
 }
 
