@@ -13,4 +13,44 @@
     text-align: center;
 }
 
+.test-wrapper {
+    border: 10px solid grey;
+    border-radius: 10px;
+    display: flex;
+    height: 200%;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+#origin-text {
+    background-color: #ededed;
+    padding: 1em 1em 0;
+    margin: 1em 0;
+}
+
+#origin-text p{
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.test-area{
+    max-width: 550px;
+    alignment: center;
+}
+
+#reset{
+    padding: 20px;
+    font-weight: bold;
+    border: 10px solid #E95D0F;
+    color: #E95D0F;
+    ;
+}
+
+.timer{
+    font-size: 3em;
+    font-weight: bold;
+}
+
 
