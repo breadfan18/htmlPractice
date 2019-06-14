@@ -56,11 +56,21 @@ function start(){
 function reset(){
     clearInterval(interval);
     interval = null;
-    testArea.value = "";
-    testWrapper.style.backgroundColor = "grey";
-    theTimer.innerHTML = "00:00:00";
-    timerRunning=false;
+
+    //set the clock back to 0:
     timer = [0, 0, 0, 0];
+
+    //set timerRunning back to false:
+    timerRunning = false;
+
+    //clear the testArea:
+    testArea.value = "";
+
+    //set the time back:
+    theTimer.innerHTML = "00:00:00";
+
+    //set the test area wrapper back to gray:
+    testWrapper.style.borderColor = "grey";
 }
 
 // Event listeners for keyboard input and the reset
