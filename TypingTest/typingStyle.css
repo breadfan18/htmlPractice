@@ -1,16 +1,26 @@
 *{
-    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-family: 'Source Code Pro', 'Helvetica', Arial, sans-serif;
     font-size: 18px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .masthead {
-    background-image: url(headerImage.jpeg);
+    background-image: url(bannerheader.jpg);
     padding: 1em 2em;
+    color: black;
 
 }
 
 .masthead h1{
     text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
 }
 
 .test-wrapper {
@@ -37,15 +47,17 @@
 
 .test-area{
     max-width: 550px;
-    alignment: center;
+    padding: 0 2em;
+    margin: 0 auto 4em;
 }
 
 #reset{
-    padding: 20px;
+    padding: .5em 1em;
+    font-size: 1.2em;
     font-weight: bold;
-    border: 10px solid #E95D0F;
     color: #E95D0F;
-    ;
+    background: white ;
+    border: 10px solid #E95D0F;
 }
 
 .timer{
@@ -53,4 +65,26 @@
     font-weight: bold;
 }
 
+.intro {
+    background-color: #0F1B2C;
+    color: #fff;
+    padding: 2em 2em;
+}
+
+.intro p{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+#reset:hover{
+    color: white;
+    background-color: #E95D0F;
+}
+
+.meta{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
