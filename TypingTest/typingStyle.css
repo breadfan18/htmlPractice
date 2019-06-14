@@ -1,0 +1,16 @@
+*{
+    font-family: 'Source Code Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.masthead {
+    background-image: url(headerImage.jpeg);
+    padding: 1em 2em;
+
+}
+
+.masthead h1{
+    text-align: center;
+}
+
+
