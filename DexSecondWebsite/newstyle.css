@@ -15,8 +15,9 @@ nav {
 }
 
 nav p{
-    font-family: Arial;
-    color: #222222;
+    background-color: #000000;
+    font-family: arial;
+    color: #ffffff;
     font-size: 24px;
     line-height: 55px;
     float: left;
@@ -30,10 +31,41 @@ nav ul {
 nav ul li{
     float: left;
     list-style: none;
+    position: relative;
 }
 
 nav ul li a{
+    display: block;
+    font-family: arial, serif;
+    color: #222222;
+    font-size: 19px;
+    padding: 17px 14px;
+    text-decoration: none;
+}
 
+nav ul li a:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav ul li ul li {
+    width: 180px;
+}
+
+nav ul li ul li a {
+    padding: 9px 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
 }
 
 
