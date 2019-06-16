@@ -59,7 +59,6 @@ nav ul li ul{
     border-radius: 0px 0px 10px 10px;
 }
 
-
 nav ul li:hover ul{
     display: block;
 }
@@ -82,6 +81,12 @@ section img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 40px;
+    color: #ffffff;
 }
 
 .category {
