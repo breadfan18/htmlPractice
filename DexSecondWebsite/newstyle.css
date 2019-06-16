@@ -19,7 +19,7 @@ nav {
 
 nav p{
     background-color: #000000;
-    font-family: arial;
+    font-family: arial, serif;
     color: #ffffff;
     font-size: 24px;
     line-height: 60px;
@@ -74,6 +74,10 @@ nav ul li ul li a {
 
 nav ul li ul li:hover {
     background-color: #f3f3f3;
+}
+
+section img {
+    border: 10px solid black;
 }
 
 
