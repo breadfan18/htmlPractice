@@ -34,15 +34,15 @@ function spellcheck() {
     if (textEntered === originText){
         clearInterval(interval);
         testWrapper.style.borderColor = "#599690";
-        let sucessAudio = new Audio('success.wav');
-        sucessAudio.play();
+        let successAudio = new Audio('success.wav');
+        successAudio.play();
     }else {
         if (textEntered === originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
         }else {
             testWrapper.style.borderColor = "#E95D0F";
-            let audio = new Audio('error.wav');
-            audio.play();
+            let errorAudio = new Audio('error.wav');
+            errorAudio.play();
         }
     }
 }
