@@ -40,6 +40,7 @@ function spellcheck() {
         }else {
             testWrapper.style.borderColor = "#E95D0F";
             let audio = new Audio('error.wav');
+            audio.play();
         }
     }
 }
