@@ -34,14 +34,14 @@ function spellcheck() {
     if (textEntered === originText){
         clearInterval(interval);
         testWrapper.style.borderColor = "#599690";
-        let successAudio = new Audio('success.wav');
+        let successAudio = new Audio('sounds/success.wav');
         successAudio.play();
     }else {
         if (textEntered === originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
         }else {
             testWrapper.style.borderColor = "#E95D0F";
-            let errorAudio = new Audio('error.wav');
+            let errorAudio = new Audio('sounds/error.wav');
             errorAudio.play();
         }
     }
