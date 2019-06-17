@@ -34,6 +34,8 @@ function spellcheck() {
     if (textEntered === originText){
         clearInterval(interval);
         testWrapper.style.borderColor = "#599690";
+        let sucessAudio = new Audio('success.wav');
+        sucessAudio.play();
     }else {
         if (textEntered === originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
