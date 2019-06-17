@@ -39,6 +39,7 @@ function spellcheck() {
             testWrapper.style.borderColor = "#65CCf3";
         }else {
             testWrapper.style.borderColor = "#E95D0F";
+            let audio = new Audio('error.wav');
         }
     }
 }
