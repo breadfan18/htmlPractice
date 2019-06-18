@@ -99,4 +99,14 @@ body {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
+    font-size: 200px;
+    font-family: Ayuthaya, serif;
+    color: #91C050;
+    text-shadow:
+            3px 3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
+
