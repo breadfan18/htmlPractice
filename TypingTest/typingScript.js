@@ -87,3 +87,5 @@ testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellcheck, false);
 
 resetButton.addEventListener("click", reset, false);
+
+
