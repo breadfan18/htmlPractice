@@ -101,23 +101,6 @@ body {
     cursor: pointer;
 }
 
-/*#overlay-text {*/
-/*    position: absolute;*/
-/*    font-size: 150px;*/
-/*    font-family: Ayuthaya, serif;*/
-/*    color: #91C050;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    !*transform: translate(-50%,-50%);*!*/
-/*    !*-ms-transform: translate(-50%,-50%);*!*/
-/*    text-shadow:*/
-/*            3px 3px 0 #000,*/
-/*            -1px -1px 0 #000,*/
-/*            1px -1px 0 #000,*/
-/*            -1px 1px 0 #000,*/
-/*            1px 1px 0 #000;*/
-/*}*/
-
 #overlay-text{
     position: absolute;
     top: 50%;
