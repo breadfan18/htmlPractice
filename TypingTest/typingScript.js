@@ -36,6 +36,8 @@ function spellcheck() {
         testWrapper.style.borderColor = "#599690";
         let successAudio = new Audio('sounds/success.wav');
         successAudio.play();
+        let overlay = document.querySelector("#overlay");
+        overlay.style.display = "block";
     }else {
         if (textEntered === originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
