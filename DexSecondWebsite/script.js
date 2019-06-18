@@ -1,7 +1,7 @@
 var myIndex = 0;
-slideShow();
+autoSlideShow();
 
-function slideShow() {
+function autoSlideShow() {
     let images = document.getElementsByClassName("mySlides");
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
@@ -11,6 +11,6 @@ function slideShow() {
         myIndex = 1;
     }
     images[myIndex - 1].style.display = "block";
-    setTimeout(slideShow, 3000);
+    setTimeout(autoSlideShow, 3000);
 }
 
