@@ -103,3 +103,8 @@ body p p {
 
 }
 
+.mySlides {
+    width: 100vw;
+    height: 30vw;
+}
+
