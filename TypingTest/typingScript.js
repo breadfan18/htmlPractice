@@ -52,6 +52,7 @@ function spellcheck() {
 
 // Start the TheTimer:
 function start(){
+    console.log(overlayClose.innerHTML);
     let textEnteredLength = testArea.value.length;
     if (textEnteredLength === 0 && !timerRunning) {
         timerRunning = true;
