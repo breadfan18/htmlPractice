@@ -3,6 +3,7 @@ const testArea = document.querySelector("#test-area");
 const originText = document.querySelector("#origin-text p").innerHTML;
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
+const overlayClose = document.querySelector("#overlay");
 
 var timer = [0,0,0,0];
 var interval;
@@ -79,6 +80,11 @@ function reset(){
     testWrapper.style.borderColor = "grey";
 }
 
+function returnToApp(){
+    overlayClose.style.display = "none";
+    reset();
+}
+
 // Event listeners for keyboard input and the reset
 
 //keypress event triggers when any key is pressed
@@ -87,5 +93,7 @@ testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellcheck, false);
 
 resetButton.addEventListener("click", reset, false);
+
+overlayClose.addEventListener("click", returnToApp, false);
 
 

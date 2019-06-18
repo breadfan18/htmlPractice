@@ -127,3 +127,12 @@ body {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
+
+.overlayClose {
+    /*position: absolute;*/
+    /*top: 60%;*/
+    /*left: 50%;*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
