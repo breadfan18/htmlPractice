@@ -24,7 +24,7 @@ nav p{
     font-size: 24px;
     line-height: 60px;
     float: left;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -55,8 +55,8 @@ nav ul li ul{
     display: none;
     position: absolute;
     background-color: white;
-    padding: 0px;
-    border-radius: 0px 0px 10px 10px;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
 }
 
 nav ul li:hover ul{
