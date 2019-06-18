@@ -108,8 +108,6 @@ body p p {
     height: 30vw;
 }
 
-
-/* Fading animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -117,13 +115,12 @@ body p p {
     animation-duration: 1.5s;
 }
 
-
 @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .6}
     to {opacity: 1}
 }
 
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .6}
     to {opacity: 1}
 }
