@@ -77,8 +77,9 @@ nav ul li ul li:hover {
 
 .slideshow-container img {
     border: 10px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin: 0 auto;
     width: 100vw;
     height: 30vw;
 }

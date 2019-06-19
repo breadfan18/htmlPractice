@@ -1,6 +1,7 @@
 var myIndex = 0;
-var slideIndex = 1;
+var imgIndex = 1;
 //autoSlideShow();
+//manualSlideShow(imgIndex);
 showOnlyFirstImage();
 
 var prevButton = document.querySelector(".prev");
@@ -12,10 +13,12 @@ function showOnlyFirstImage() {
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
-    images[1].style.display = "block";
+    images[0].style.display = "block";
 }
+
 function autoSlideShow() {
     let images = document.getElementsByClassName("mySlides");
+    console.log(images);
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
@@ -27,38 +30,31 @@ function autoSlideShow() {
     setTimeout(autoSlideShow, 3000);
 }
 
-// function manualSlides() {
-//     let images = document.getElementsByClassName("mySlides");
-//     for (let i = 0; i < images.length; i++) {
-//         images[i].style.display = "none";
-//     }
-//     myIndex++;
-//     if (myIndex > images.length) {
-//         myIndex = 1;
-//     }
-//     for (let i = 0; i < images.length; i++) {
-//         images[i].style.display = "no"
-//     }
-//
-// }
-//
-// function showSlides(n) {
-//     let images = document.getElementsByClassName("mySlides");
-//     for (let i = 0; i < images.length; i++) {
-//         images[i].style.display = "none";
-//     }
-// }
 
-function showNextSlide(index){
+function manualSlideShow(n) {
     let images = document.getElementsByClassName("mySlides");
-    images[index+1].style.display = "block";
+    if (n > images.length) {
+        imgIndex = 1;
+    }
+    if (n < 1) {
+        imgIndex = images.length;
+    }
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+   // images[imgIndex - 1].style.display = "block";
+
 }
 
-function showPrevSlide(index){
-    let images = document.getElementsByClassName("mySlides");
-    images[index-1].style.display = "block";
+function showNextSlide(n){
+    manualSlideShow(imgIndex += n);
 }
 
-prevButton.addEventListener('click', showNextSlide, false);
-nextButton.addEventListener('click', showPrevSlide, false);
+// function showPrevSlide(n){
+//     let images = document.getElementsByClassName("mySlides");
+//     images[index-1].style.display = "block";
+// }
+
+nextButton.addEventListener('click', showNextSlide, false);
+//nextButton.addEventListener('click', showPrevSlide, false);
 
