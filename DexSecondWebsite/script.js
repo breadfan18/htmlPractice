@@ -1,20 +1,12 @@
 var myIndex = 0;
 var imgIndex = 1;
 //autoSlideShow();
-//manualSlideShow(imgIndex);
-showOnlyFirstImage();
+manualSlideShow(imgIndex);
+
 
 var prevButton = document.querySelector(".prev");
 var nextButton = document.querySelector(".next");
 
-
-function showOnlyFirstImage() {
-    let images = document.getElementsByClassName("mySlides");
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-    images[0].style.display = "block";
-}
 
 function autoSlideShow() {
     let images = document.getElementsByClassName("mySlides");
@@ -32,23 +24,22 @@ function autoSlideShow() {
 
 
 function manualSlideShow(n) {
-    let images = document.getElementsByClassName("mySlides");
-    if (n > images.length) {
-        imgIndex = 1;
-    }
+    let images = document.querySelectorAll(".mySlides");
+    if (n > images.length) {imgIndex = 1;}
     if (n < 1) {
-        imgIndex = images.length;
-    }
+        imgIndex = images.length;}
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
+    images[imgIndex - 1].style.display = "block";
    // images[imgIndex - 1].style.display = "block";
-
 }
 
-function showNextSlide(n){
+function plusSlides(n){
     manualSlideShow(imgIndex += n);
+
 }
+
 
 // function showPrevSlide(n){
 //     let images = document.getElementsByClassName("mySlides");
