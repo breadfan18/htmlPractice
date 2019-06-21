@@ -12,7 +12,7 @@ function autoSlideShow(n) {
         images[i].style.display = "none";
     }
     autoIndex++;
-    if (autoIndex > images.length) {
+    if (n > images.length) {
         autoIndex = 1;
     }
     // if (autoIndex < 1) {GS
