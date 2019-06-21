@@ -3,6 +3,8 @@ var manualIndex = 1;
 //autoSlideShow();
 manualSlideShow(manualIndex);
 
+playPauseBtn = document.querySelector('#playPauseButton');
+
 function autoSlideShow() {
     let images = document.getElementsByClassName("mySlides");
     console.log(images);
