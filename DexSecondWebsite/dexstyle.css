@@ -76,7 +76,7 @@ nav ul li ul li:hover {
 }
 
 .slideshow-container img {
-    border: 10px solid black;
+    /*border: 10px solid black;*/
     margin: 0 auto;
     width: 100vw;
     height: 30vw;
@@ -147,4 +147,16 @@ body p p {
 @keyframes fade {
     from {opacity: .6}
     to {opacity: 1}
+}
+
+ #playPauseButton {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 5;
+    margin: 15px;
+    cursor: pointer;
+    background-image: url("images/playpause-90-90-0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
