@@ -1,4 +1,4 @@
-var autoIndex = 1;
+var autoIndex = 0;
 var manualIndex = 1;
 //autoSlideShow();
 manualSlideShow(manualIndex);
@@ -6,12 +6,12 @@ addDots();
 
 playPauseBtn = document.querySelector('#playPauseButton');
 
-function autoSlideShow() {
+function autoSlideShow(n) {
     let images = document.querySelectorAll(".mySlides");
-    console.log(images);
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
+    autoIndex++;
     if (autoIndex > images.length) {
         autoIndex = 1;
     }
@@ -53,7 +53,7 @@ function addDots() {
     }
 }
 
-playPauseBtn.addEventListener('click', autoSlideShow, false);
+//playPauseBtn.addEventListener('click', autoSlideShow, false);
 
 
 
