@@ -35,4 +35,6 @@ function plusSlides(n){
     manualSlideShow(manualIndex += n);
 }
 
+playPauseBtn.addEventListener('click', autoSlideShow, false);
+
 

@@ -87,7 +87,6 @@ nav ul li ul li:hover {
 }
 
 .galleryContainer .slideshow-container img {
-    /*border: 10px solid black;*/
     margin: 0 auto;
     width: 99vw;
     height: 30vw;
@@ -139,9 +138,10 @@ body p p {
     font-size: 12px;
 }
 
-.info  {
-
+section p {
+    padding: 5px;
 }
+
 
 .fade {
     -webkit-animation-name: fade;
