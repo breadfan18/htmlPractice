@@ -1,29 +1,29 @@
 var slideIndex = 1;
-//autoSlideShow();
+//changeImageAuto();
 manualSlideShow(slideIndex);
 addDots();
 
-playPauseBtn = document.querySelector('#playPauseButton');
+function changeImageAuto(slideIndex) {
+    let images = document.querySelectorAll('.mySlides');
 
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
 
-// function autoSlideShow(n) {
-//     console.log(images);
-//     if (n > images.length) {
-//         slideIndex = 1;
-//     }
-//     if (n < 1) {
-//         slideIndex = images.length;
-//     }
-//     for (let i = 0; i < images.length; i++) {
-//         images[i].style.display = "none";
-//     }
-//     images[slideIndex-1].style.display = "block";
-//     setTimeout(autoSlideShow, 2000);
-// }
+    if (slideIndex > images.length) {
+        slideIndex = 1;
+    }
+    if (slideIndex < 1) {
+        slideIndex = images.length;
+    }
+
+    images[slideIndex-1].style.display = "block";
+    setTimeout(changeImageAuto, 2000);
+}
 
 
 function manualSlideShow(n) {
-    var images = document.querySelectorAll(".mySlides");
+    let images = document.querySelectorAll(".mySlides");
 
     if (n > images.length) {
         slideIndex = 1;
@@ -53,7 +53,7 @@ function addDots() {
     }
 }
 
-//playPauseBtn.addEventListener('click', autoSlideShow, false);
+//playPauseBtn.addEventListener('click', changeImageAuto, false);
 
 
 
