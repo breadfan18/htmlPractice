@@ -43,7 +43,7 @@ function manualSlideShow(n) {
         dotsList[j].style.backgroundColor = "white"
     }
     images[slideIndex - 1].style.display = "block";
-    dotsList[slideIndex -1].style.backgroundColor = "#9FAEBC";
+    dotsList[slideIndex -1].style.backgroundColor = "#7CC3E8";
 
 }
 
