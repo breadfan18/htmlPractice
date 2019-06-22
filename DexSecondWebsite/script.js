@@ -15,9 +15,9 @@ function autoSlideShow(n) {
     if (n > images.length) {
         autoIndex = 1;
     }
-    // if (autoIndex < 1) {GS
-    //     autoIndex = images.length;
-    // }
+    if (autoIndex < 1) {
+        autoIndex = images.length;
+    }
     images[autoIndex-1].style.display = "block";
     setTimeout(autoSlideShow, 2000);
 }
