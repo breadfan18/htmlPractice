@@ -29,7 +29,7 @@ function autoSlideShow() {
     dotsList[autoIndex - 1].style.backgroundColor = "white";
     playing = true;
 
-    setTimeout(autoSlideShow, 1000);
+    setTimeout(autoSlideShow, 2000);
 }
 
 function manualSlideShow(n) {
