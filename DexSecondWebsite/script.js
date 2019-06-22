@@ -1,28 +1,30 @@
 var slideIndex = 1;
-//autoSlideShow();
+var autoIndex = 0;
 addDots();
 const dotsList = document.querySelectorAll('.dots');
 const images = document.querySelectorAll(".mySlides");
-
-
+const pauseBtn = document.querySelectorAll(".mySlides");
 manualSlideShow(slideIndex);
 
-
-
-function autoSlideShow(slideIndex) {
+function autoSlideShow() {
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
-    if (slideIndex > images.length) {
-        slideIndex = 1;
+    for (let j = 0; j < dotsList.length; j++) {
+        dotsList[j].style.backgroundColor = "white";
     }
-    if (slideIndex < 1) {
-        slideIndex = images.length;
+    autoIndex++;
+    if (autoIndex > images.length) {
+        autoIndex = 1;
     }
-    images[slideIndex-1].style.display = "block";
-    setTimeout(autoSlideShow, 2000);
-}
+    if (autoIndex < 1) {
+        autoIndex = images.length;
+    }
+    images[autoIndex - 1].style.display = "block";
+    dotsList[autoIndex - 1].style.backgroundColor = "grey";
 
+    setTimeout(autoSlideShow, 1000);
+}
 
 function manualSlideShow(n) {
     if (n > images.length) {
@@ -35,7 +37,7 @@ function manualSlideShow(n) {
         images[i].style.display = "none";
     }
     for (let j = 0; j < dotsList.length; j++) {
-        dotsList[j].style.backgroundColor = "white"
+        dotsList[j].style.backgroundColor = "white";
     }
     images[slideIndex - 1].style.display = "block";
     dotsList[slideIndex -1].style.backgroundColor = "grey";
@@ -55,6 +57,10 @@ function addDots() {
         dotsContainer.append(dot);
         dots.push(dot);
     }
+}
+
+function pauseSlideshow() {
+
 }
 
 
