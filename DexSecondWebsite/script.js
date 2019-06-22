@@ -4,26 +4,27 @@ manualSlideShow(slideIndex);
 addDots();
 
 playPauseBtn = document.querySelector('#playPauseButton');
-var images = document.querySelectorAll(".mySlides");
 
 
-function autoSlideShow(n) {
-    console.log(images);
-    if (n > images.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = images.length;
-    }
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-    images[slideIndex-1].style.display = "block";
-    setTimeout(autoSlideShow, 2000);
-}
+// function autoSlideShow(n) {
+//     console.log(images);
+//     if (n > images.length) {
+//         slideIndex = 1;
+//     }
+//     if (n < 1) {
+//         slideIndex = images.length;
+//     }
+//     for (let i = 0; i < images.length; i++) {
+//         images[i].style.display = "none";
+//     }
+//     images[slideIndex-1].style.display = "block";
+//     setTimeout(autoSlideShow, 2000);
+// }
 
 
 function manualSlideShow(n) {
+    var images = document.querySelectorAll(".mySlides");
+
     if (n > images.length) {
         slideIndex = 1;
     }
