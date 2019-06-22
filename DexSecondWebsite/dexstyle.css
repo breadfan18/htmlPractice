@@ -186,7 +186,7 @@ section p {
     height: 15px;
     border-radius: 50%;
     margin-left: 30px;
-    background-color: white;
+    background-color: grey;
     border: 2px white;
     cursor: pointer;
     transition: background-color .5s;
@@ -194,7 +194,7 @@ section p {
 }
 
 .galleryContainer #dotsContainer .dots:hover, .galleryContainer #dotsContainer .dots.active  {
-    background-color: grey;
+    background-color: white;
 }
 
 .galleryContainer #dotsContainer .dots:first-child {
