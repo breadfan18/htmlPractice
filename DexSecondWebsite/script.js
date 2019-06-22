@@ -1,7 +1,12 @@
 var slideIndex = 1;
 //changeImageAuto();
-manualSlideShow(slideIndex);
 addDots();
+const dotsList = document.querySelectorAll('.dots');
+console.log(dotsList);
+
+manualSlideShow(slideIndex);
+
+
 
 function changeImageAuto(slideIndex) {
     let images = document.querySelectorAll('.mySlides');
@@ -34,7 +39,12 @@ function manualSlideShow(n) {
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
+    for (let j = 0; j < dotsList.length; j++) {
+        dotsList[j].style.backgroundColor = "white"
+    }
     images[slideIndex - 1].style.display = "block";
+    dotsList[slideIndex -1].style.backgroundColor = "#9FAEBC";
+
 }
 
 function plusSlides(n) {
