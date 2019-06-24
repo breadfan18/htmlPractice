@@ -65,6 +65,7 @@ function addDots() {
     }
 }
 
+
 function pauseSlideshow() {
  //how?? playing boolean? use that somehow...take a look at the typing text example timerRunning boolean
 }
