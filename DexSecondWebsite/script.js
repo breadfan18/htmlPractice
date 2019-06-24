@@ -8,33 +8,32 @@ const images = document.querySelectorAll(".mySlides");
 const pauseBtn = document.querySelectorAll("#playPauseButton");
 
 let slideshowPlaying = false;
+let timeout;
 
 
 manualSlideShow(slideIndex);
 
 
 function autoSlideShow() {
-    slideshowPlaying = true;
-    if (slideshowPlaying === true) {
-        for (let i = 0; i < images.length; i++) {
-            images[i].style.display = "none";
-        }
-        for (let j = 0; j < dotsList.length; j++) {
-            dotsList[j].style.backgroundColor = "grey";
-        }
-        autoIndex++;
-        if (autoIndex > images.length) {
-            autoIndex = 1;
-        }
-        if (autoIndex < 1) {
-            autoIndex = images.length;
-        }
-        images[autoIndex - 1].style.display = "block";
-        dotsList[autoIndex - 1].style.backgroundColor = "white";
-        playing = true;
-
-        setTimeout(autoSlideShow, 2000);
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
     }
+    for (let j = 0; j < dotsList.length; j++) {
+        dotsList[j].style.backgroundColor = "grey";
+    }
+    autoIndex++;
+    if (autoIndex > images.length) {
+        autoIndex = 1;
+    }
+    if (autoIndex < 1) {
+        autoIndex = images.length;
+    }
+    images[autoIndex - 1].style.display = "block";
+    dotsList[autoIndex - 1].style.backgroundColor = "white";
+    playing = true;
+
+    timeout = setTimeout(autoSlideShow, 2000);
+    slideshowPlaying = true;
 }
 
 function manualSlideShow(n) {
@@ -55,6 +54,10 @@ function manualSlideShow(n) {
 }
 
 function plusSlides(n) {
+    if (slideshowPlaying === true) {
+        clearTimeout(timeout);
+        slideshowPlaying = false;
+    }
     manualSlideShow(slideIndex += n);
 }
 
