@@ -9,6 +9,7 @@ const pauseBtn = document.querySelectorAll("#playPauseButton");
 
 let slideshowPlaying = false;
 let timeout;
+let currentSlide;
 
 
 manualSlideShow(slideIndex);
@@ -30,9 +31,13 @@ function autoSlideShow() {
     }
     images[autoIndex - 1].style.display = "block";
     dotsList[autoIndex - 1].style.backgroundColor = "white";
-    playing = true;
 
-    timeout = setTimeout(autoSlideShow, 2000);
+    function playSlidesShow() {
+        timeout = setTimeout(autoSlideShow, 2000);
+        currentSlide = autoIndex;
+    }
+    playSlidesShow();
+
     slideshowPlaying = true;
 }
 
@@ -57,6 +62,8 @@ function plusSlides(n) {
     if (slideshowPlaying === true) {
         clearTimeout(timeout);
         slideshowPlaying = false;
+        slideIndex = currentSlide;
+        images[currentSlide].style.display = "block";
     }
     manualSlideShow(slideIndex += n);
 }
