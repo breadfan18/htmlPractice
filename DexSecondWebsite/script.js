@@ -7,29 +7,34 @@ const images = document.querySelectorAll(".mySlides");
 //next step is to try and get this slideshow to pause and play
 const pauseBtn = document.querySelectorAll("#playPauseButton");
 
+let slideshowPlaying = false;
+
 
 manualSlideShow(slideIndex);
 
 
 function autoSlideShow() {
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-    for (let j = 0; j < dotsList.length; j++) {
-        dotsList[j].style.backgroundColor = "grey";
-    }
-    autoIndex++;
-    if (autoIndex > images.length) {
-        autoIndex = 1;
-    }
-    if (autoIndex < 1) {
-        autoIndex = images.length;
-    }
-    images[autoIndex - 1].style.display = "block";
-    dotsList[autoIndex - 1].style.backgroundColor = "white";
-    playing = true;
+    slideshowPlaying = true;
+    if (slideshowPlaying === true) {
+        for (let i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+        for (let j = 0; j < dotsList.length; j++) {
+            dotsList[j].style.backgroundColor = "grey";
+        }
+        autoIndex++;
+        if (autoIndex > images.length) {
+            autoIndex = 1;
+        }
+        if (autoIndex < 1) {
+            autoIndex = images.length;
+        }
+        images[autoIndex - 1].style.display = "block";
+        dotsList[autoIndex - 1].style.backgroundColor = "white";
+        playing = true;
 
-    setTimeout(autoSlideShow, 2000);
+        setTimeout(autoSlideShow, 2000);
+    }
 }
 
 function manualSlideShow(n) {
