@@ -61,7 +61,6 @@ function plusSlides(n) {
         clearTimeout(timeout);
         slideshowPlaying = false;
         slideIndex = currentSlide;
-        images[currentSlide].style.display = "block";
         autoIndex = 0;
     }
     manualSlideShow(slideIndex += n);
