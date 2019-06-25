@@ -13,27 +13,27 @@ const pauseBtn = document.querySelector("#playPauseButton");
 manualSlideShow(slideIndex);
 
 function autoSlideShow() {
-        for (let i = 0; i < images.length; i++) {
-            images[i].style.display = "none";
-        }
-        for (let j = 0; j < dotsList.length; j++) {
-            dotsList[j].style.backgroundColor = "grey";
-        }
-        autoIndex++;
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    for (let j = 0; j < dotsList.length; j++) {
+        dotsList[j].style.backgroundColor = "grey";
+    }
+    autoIndex++;
 
-        if (autoIndex > images.length) {
-            autoIndex = 1;
-        }
-        if (autoIndex < 1) {
-            autoIndex = images.length;
-        }
-        images[autoIndex - 1].style.display = "block";
-        dotsList[autoIndex - 1].style.backgroundColor = "hotpink";
+    if (autoIndex > images.length) {
+        autoIndex = 1;
+    }
+    if (autoIndex < 1) {
+        autoIndex = images.length;
+    }
+    images[autoIndex - 1].style.display = "block";
+    dotsList[autoIndex - 1].style.backgroundColor = "hotpink";
 
-        timeout = setTimeout(autoSlideShow, 2000);
-        currentSlide = autoIndex;
+    timeout = setTimeout(autoSlideShow, 2000);
+    currentSlide = autoIndex;
 
-        slideshowPlaying = true;
+    slideshowPlaying = true;
 
 }
 
