@@ -125,23 +125,17 @@ nav ul li ul li:hover {
 
 .quote {
     font-style: italic;
-    font-size: 40px;
-    color: black;
-    text-shadow: 2px 2px hotpink;
+    font-size: 20px;
+    color: hotpink;
+    text-shadow: 2px 2px black;
+    background-color: black;
+    padding: 0 50px 40px;
+    text-align: center;
 }
-
-.category {
-    /*font-size: 20px;*/
-    /*font-weight: bold;*/
-}
-
-/*body p p {*/
-/*    font-size: 12px;*/
-/*}*/
 
 section p {
     padding: 5px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .info p strong {
