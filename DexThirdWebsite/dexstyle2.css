@@ -111,7 +111,7 @@ html   {
     margin: 0;
 }
 
-.galleryContainer .slideShowContainer #playPauseButton {
+.galleryContainer .slideShowContainer #playButton {
     width: 32px;
     height: 32px;
     position: absolute;
