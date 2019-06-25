@@ -7,6 +7,9 @@ const images = document.querySelectorAll(".mySlides");
 addDots();
 const dotsList = document.querySelectorAll('.dots');
 
+
+clickDotsToChangeImg();
+
 //next step is to show the right photo when each dot is clicked.
 
 manualSlideShow(slideIndex);
@@ -82,8 +85,20 @@ function pauseSlideshow() {
     slideIndex = currentSlide;
     autoIndex = 0;
     }
- //how?? playing boolean? use that somehow...take a look at the typing text example timerRunning boolean
 }
+
+function clickDotsToChangeImg() {
+    let dotList = document.querySelectorAll('.dots');
+    console.log(dotList);
+}
+
+function getDotsLocator(index){
+    return document.querySelector('.dots:nth-child('+ index+')')
+}
+
+console.log(getDotsLocator(4));
+
+
 
 
 
