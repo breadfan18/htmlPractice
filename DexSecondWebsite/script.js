@@ -16,6 +16,7 @@ manualSlideShow(slideIndex);
 
 
 function autoSlideShow() {
+    console.log(autoIndex);
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
@@ -23,12 +24,9 @@ function autoSlideShow() {
         dotsList[j].style.backgroundColor = "grey";
     }
     autoIndex++;
-    if (autoIndex > images.length) {
-        autoIndex = 1;
-    }
-    if (autoIndex < 1) {
-        autoIndex = images.length;
-    }
+
+    if (autoIndex > images.length) {autoIndex = 1;}
+    if (autoIndex < 1) {autoIndex = images.length;}
     images[autoIndex - 1].style.display = "block";
     dotsList[autoIndex - 1].style.backgroundColor = "white";
 
@@ -64,6 +62,7 @@ function plusSlides(n) {
         slideshowPlaying = false;
         slideIndex = currentSlide;
         images[currentSlide].style.display = "block";
+        autoIndex = 0;
     }
     manualSlideShow(slideIndex += n);
 }
