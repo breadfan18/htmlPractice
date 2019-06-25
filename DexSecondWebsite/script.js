@@ -7,8 +7,7 @@ const images = document.querySelectorAll(".mySlides");
 addDots();
 const dotsList = document.querySelectorAll('.dots');
 
-//next step is to try and get this slideshow to pause and play
-const pauseBtn = document.querySelector("#playPauseButton");
+//next step is to show the right photo when each dot is clicked.
 
 manualSlideShow(slideIndex);
 
@@ -85,8 +84,6 @@ function pauseSlideshow() {
     }
  //how?? playing boolean? use that somehow...take a look at the typing text example timerRunning boolean
 }
-
-pauseBtn.addEventListener("click", pauseSlideshow, false);
 
 
 
