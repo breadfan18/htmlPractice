@@ -1,42 +1,40 @@
 var slideIndex = 1;
 var autoIndex = 0;
-addDots();
-const dotsList = document.querySelectorAll('.dots');
-const images = document.querySelectorAll(".mySlides");
-
-//next step is to try and get this slideshow to pause and play
-const pauseBtn = document.querySelectorAll("#playPauseButton");
-
 let slideshowPlaying = false;
 let timeout;
 let currentSlide;
+const images = document.querySelectorAll(".mySlides");
+addDots();
+const dotsList = document.querySelectorAll('.dots');
 
+//next step is to try and get this slideshow to pause and play
+const pauseBtn = document.querySelector("#playPauseButton");
 
 manualSlideShow(slideIndex);
 
-
 function autoSlideShow() {
-    console.log(autoIndex);
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-    for (let j = 0; j < dotsList.length; j++) {
-        dotsList[j].style.backgroundColor = "grey";
-    }
-    autoIndex++;
+        for (let i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+        for (let j = 0; j < dotsList.length; j++) {
+            dotsList[j].style.backgroundColor = "grey";
+        }
+        autoIndex++;
 
-    if (autoIndex > images.length) {autoIndex = 1;}
-    if (autoIndex < 1) {autoIndex = images.length;}
-    images[autoIndex - 1].style.display = "block";
-    dotsList[autoIndex - 1].style.backgroundColor = "white";
+        if (autoIndex > images.length) {
+            autoIndex = 1;
+        }
+        if (autoIndex < 1) {
+            autoIndex = images.length;
+        }
+        images[autoIndex - 1].style.display = "block";
+        dotsList[autoIndex - 1].style.backgroundColor = "white";
 
-    function playSlidesShow() {
         timeout = setTimeout(autoSlideShow, 2000);
         currentSlide = autoIndex;
-    }
-    playSlidesShow();
 
-    slideshowPlaying = true;
+        slideshowPlaying = true;
+
 }
 
 function manualSlideShow(n) {
@@ -68,7 +66,6 @@ function plusSlides(n) {
 
 function addDots() {
     dots = [];
-    let images = document.querySelectorAll(".mySlides");
     let dotsContainer = document.querySelector("#dotsContainer");
     for (let i = 0; i < images.length; i++) {
         let dot = document.createElement("span");
@@ -80,8 +77,16 @@ function addDots() {
 
 
 function pauseSlideshow() {
+    if (slideshowPlaying === true) {
+    clearTimeout(timeout);
+    slideshowPlaying = false;
+    slideIndex = currentSlide;
+    autoIndex = 0;
+    }
  //how?? playing boolean? use that somehow...take a look at the typing text example timerRunning boolean
 }
+
+pauseBtn.addEventListener("click", pauseSlideshow, false);
 
 
 

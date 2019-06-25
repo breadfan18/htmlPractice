@@ -167,7 +167,7 @@ section p {
     z-index: 5;
     margin: 15px;
     cursor: pointer;
-    background-image: url("images/playpause-90-90-0.jpg");
+    background-image: url("images/");
     background-repeat: no-repeat;
     background-size: cover;
 }
