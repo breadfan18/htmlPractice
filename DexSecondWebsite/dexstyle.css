@@ -20,7 +20,7 @@ nav {
 nav p{
     background-color: #000000;
     font-family: arial, serif;
-    color: #ffffff;
+    color: hotpink;
     font-size: 24px;
     line-height: 60px;
     float: left;
@@ -47,7 +47,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #fff;
+    color: hotpink;
     background-color: #000000;
 }
 
@@ -104,7 +104,7 @@ nav ul li ul li:hover {
     width: auto;
     margin-top: -155px;
     padding: 16px;
-    color: white;
+    color: hotpink;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -173,16 +173,23 @@ section p {
 }
 
 #pauseButton {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     z-index: 5;
-    margin: 6px 0 0 35px;
+    margin: 10px 0 0 42px;
     cursor: pointer;
     background-image: url("images/pauseButton.png");
-    //background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
 }
+
+#pauseButton:hover, #playButton:hover {
+    background-color: hotpink;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px hotpink;
+}
+
 
 .galleryContainer #dotsContainer {
     width: 100%;
@@ -206,7 +213,7 @@ section p {
 }
 
 .galleryContainer #dotsContainer .dots:hover, .galleryContainer #dotsContainer .dots.active  {
-    background-color: white;
+    background-color: hotpink;
 }
 
 .galleryContainer #dotsContainer .dots:first-child {

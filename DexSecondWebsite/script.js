@@ -28,7 +28,7 @@ function autoSlideShow() {
             autoIndex = images.length;
         }
         images[autoIndex - 1].style.display = "block";
-        dotsList[autoIndex - 1].style.backgroundColor = "white";
+        dotsList[autoIndex - 1].style.backgroundColor = "hotpink";
 
         timeout = setTimeout(autoSlideShow, 2000);
         currentSlide = autoIndex;
@@ -51,7 +51,7 @@ function manualSlideShow(n) {
         dotsList[j].style.backgroundColor = "grey";
     }
     images[slideIndex - 1].style.display = "block";
-    dotsList[slideIndex -1].style.backgroundColor = "white";
+    dotsList[slideIndex -1].style.backgroundColor = "hotpink";
 }
 
 function plusSlides(n) {
