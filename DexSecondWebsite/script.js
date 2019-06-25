@@ -8,9 +8,7 @@ addDots();
 const dotsList = document.querySelectorAll('.dots');
 
 
-clickDotsToChangeImg();
-
-//next step is to show the right photo when each dot is clicked.
+//next step is to show the right photo when each dot is clicked. need to see how to do that..think!!!
 
 manualSlideShow(slideIndex);
 
@@ -77,7 +75,6 @@ function addDots() {
     }
 }
 
-
 function pauseSlideshow() {
     if (slideshowPlaying === true) {
     clearTimeout(timeout);
@@ -87,16 +84,18 @@ function pauseSlideshow() {
     }
 }
 
-function clickDotsToChangeImg() {
-    let dotList = document.querySelectorAll('.dots');
-    console.log(dotList);
-}
+// function clickDotsToChangeImg(dotIndex) {
+//     manualSlideShow(dotIndex);
+// }
+//
+// function getDotsLocator(index){
+//     return document.querySelector('.dots:nth-child('+ index+')')
+// }
+//
+//
+// eachDot.addEventListener('click', clickDotsToChangeImg, false);
 
-function getDotsLocator(index){
-    return document.querySelector('.dots:nth-child('+ index+')')
-}
 
-console.log(getDotsLocator(4));
 
 
 
