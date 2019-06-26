@@ -146,6 +146,14 @@ section p {
     text-decoration: underline;
 }
 
+table tr td.tableHeader {
+    font-size: 30px;
+    font-weight: bold;
+    color: hotpink;
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+}
+
 
 .fade {
     -webkit-animation-name: fade;
