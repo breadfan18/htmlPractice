@@ -138,7 +138,6 @@ table tr:nth-child(odd) {
 }
 
 table {
-    border: 1px solid black;
     padding: 10px;
     text-align: left;
     border-spacing: 5px;
