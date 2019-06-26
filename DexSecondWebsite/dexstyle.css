@@ -151,6 +151,8 @@ table tr td.tableHeader {
     color: hotpink;
     text-shadow: 2px 2px black;
     text-decoration: underline;
+    height: 60px;
+    width: 400px;
 }
 
 .fade {
