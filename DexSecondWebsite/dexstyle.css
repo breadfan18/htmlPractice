@@ -133,18 +133,18 @@ nav ul li ul li:hover {
     text-align: center;
 }
 
-section p {
-    padding: 5px;
-    font-size: 18px;
+table tr:nth-child(odd) {
+    background-color: #ededed;
 }
 
-.info p strong {
-    font-size: 30px;
-    font-weight: bold;
-    color: hotpink;
-    text-shadow: 2px 2px black;
-    text-decoration: underline;
+table {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    border-spacing: 5px;
+    line-height: 60px;
 }
+
 
 table tr td.tableHeader {
     font-size: 30px;
