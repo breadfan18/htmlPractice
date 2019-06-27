@@ -96,7 +96,6 @@ nav ul li ul li:hover {
 }
 
 .prev, .next {
-    flex-shrink: 0;
     background-color: black;
     cursor: pointer;
     position: absolute;
