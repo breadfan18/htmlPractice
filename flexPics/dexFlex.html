@@ -12,6 +12,7 @@
         .panel5 {background-image: url("https://a.ltrbxd.com/resized/sm/upload/3k/ei/4w/1h/inglourious-basterds-1200-1200-675-675-crop-000000.jpg?k=4f06543ec0");}
 
         html {
+            box-sizing: border-box;
             background: #ffc600;
             font-family: 'helvetica neue',serif;
             font-size: 20px;
@@ -22,8 +23,26 @@
             margin: 0;
         }
 
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
         .panels {
-            color: white;
+            min-height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .panel {
+
+        }
+
+        .panel > * {
+            border: 1px solid red;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
 
 
         }
@@ -33,29 +52,29 @@
     <div class="header">My Favorite Movies</div>
     <div class="panels">
         <div class="panel panel1">
-            <p>Don't</p>
-            <p>Loyal</p>
-            <p>Hi</p>
+            <p>Say</p>
+            <p>What</p>
+            <p>Again!</p>
         </div>
         <div class="panel panel2">
-            <p>Boy</p>
-            <p>Loyal</p>
-            <p>Hi</p>
+            <p>Say</p>
+            <p>My</p>
+            <p>Name</p>
         </div>
         <div class="panel panel3">
-            <p>Dex</p>
-            <p>Loyal</p>
-            <p>Hi</p>
+            <p>Winter</p>
+            <p>Is</p>
+            <p>Coming</p>
         </div>
         <div class="panel panel4">
-            <p>Dex</p>
-            <p>Loyal</p>
-            <p>Hi</p>
+            <p>The Game</p>
+            <p>is</p>
+            <p>the game</p>
         </div>
         <div class="panel panel5">
-            <p>Dex</p>
-            <p>Loyal</p>
-            <p>Hi</p>
+            <p>Nein</p>
+            <p>Nein</p>
+            <p>NEIN!!</p>
         </div>
 
 
