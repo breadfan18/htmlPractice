@@ -63,7 +63,6 @@
             justify-content: center;
             align-items: center;
             display: flex;
-            border: 1px solid red;
             flex: 1 0 auto;
         }
 
@@ -136,7 +135,7 @@
         const panels = document.querySelectorAll('.panel');
 
         function toggleOpen () {
-            panels.forEach(panel => panel.classList.remove('open'));
+            // panels.forEach(panel => panel.classList.remove('open'));
             this.classList.toggle('open');
 
         }
