@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>FlexDex</title>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
     <style>
         html {
             box-sizing: border-box;
@@ -62,10 +65,19 @@
             display: flex;
             border: 1px solid red;
             flex: 1 0 auto;
+        }
+
+        .panel p {
             text-transform: uppercase;
             font-family: 'Amatic SC', cursive;
             font-size: 2em;
             text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+
+        }
+
+        .panel.open {
+            flex: 5;
+            font-size: 40px;
         }
 
         .panel p:nth-child(2) {
@@ -90,8 +102,6 @@
 
 
     </style>
-</head>
-<body>
     <div class="header">My Favorite Movies</div>
     <div class="panels">
         <div class="panel panel1">
