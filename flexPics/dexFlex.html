@@ -58,10 +58,6 @@
             display: flex;
             border: 1px solid red;
             flex: 1 0 auto;
-        }
-
-
-        .panel p {
             text-transform: uppercase;
             font-family: 'Amatic SC', cursive;
             font-size: 2em;
@@ -70,6 +66,14 @@
 
         .panel p:nth-child(2) {
             font-size: 4em;
+        }
+
+        .panel > *:first-child {
+            transform: translateY(-100%);
+        }
+
+        .panel > *:last-child {
+            transform: translateY(100%);
         }
 
 
