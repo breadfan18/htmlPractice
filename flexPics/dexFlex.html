@@ -133,14 +133,29 @@
 
     </div>
     <script>
+        const replaceMidText = ["What", "My", "Is", "Is", "Nein"];
         const panels = document.querySelectorAll('.panel');
-        const midText = document.querySelectorAll('.panel > p:nth-child(2)');
+        const midTexts = document.querySelectorAll('.panel > p:nth-child(2)');
+        const modTextsArray = midTexts.forEach(function getText(text){
+            return text.innerHTML;
+        });
 
 
         function toggleOpen () {
+            console.log(modTextsArray);
+
+
             // panels.forEach(panel => panel.classList.remove('open'));
             this.classList.toggle('open');
-            console.log(midText);
+            for (let i = 0; i < midTexts.length; i++) {
+                if (panels[i].classList.contains('open')) {
+                    let currentMidText = midTexts[i].innerHTML;
+                    console.log(replaceMidText[i]);
+                    // midTexts[i].innerHTML.replace(modTextsArray[i], replaceMidText[i]);
+
+
+                }
+            }
 
 
         }
