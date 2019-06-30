@@ -134,10 +134,14 @@
     </div>
     <script>
         const panels = document.querySelectorAll('.panel');
+        const midText = document.querySelectorAll('.panel > p:nth-child(2)');
+
 
         function toggleOpen () {
             // panels.forEach(panel => panel.classList.remove('open'));
             this.classList.toggle('open');
+            console.log(midText);
+
 
         }
         
