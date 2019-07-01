@@ -144,9 +144,7 @@
      //   let openedPanel = document.querySelector('.open.open-active)');
 
         function toggleOpen () {
-
-
-            //panels.forEach(panel => panel.classList.remove('open'));
+            panels.forEach(panel => panel.classList.remove('open'));
             this.classList.toggle('open');
         }
         
@@ -156,9 +154,20 @@
             }
         }
 
+        function toggleClose () {
+            if (panels.classList.contains('open')) {
+                panels.forEach(panel => panel.classList.remove('open'));
+
+            }
+        }
+
+
+
         panels.forEach(panel => panel.addEventListener('click', toggleOpen, false));
 
         panels.forEach(panel => panel.addEventListener('transitionend', toggleActive, false));
+
+        panels.forEach(panel => panel.addEventListener('click', toggleClose, false));
 
 
 
