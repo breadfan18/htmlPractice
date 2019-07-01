@@ -142,17 +142,15 @@
         const replaceMidText = ["What", "My", "Is", "Is", "Nein"];
         const panels = document.querySelectorAll('.panel');
      //   let openedPanel = document.querySelector('.open.open-active)');
+        panels.forEach(panel => panel.classList.remove('open'));
 
         function toggleOpen () {
-            panels.forEach(panel => panel.classList.remove('open'));
             this.classList.toggle('open');
         }
         
         function toggleActive (e) {
             if (e.propertyName.includes('flex')) {
-                console.log(e.propertyName);
                 this.classList.toggle('open-active');
-                console.log(this.classList);
             }
         }
 
@@ -160,6 +158,7 @@
         //This below doesn't work...figure it out!!!!
         // function toggleClose (e) {
         //     if (e.propertyName.includes('flex')) {
+        //         this.classList.remove('open');
         //         this.classList.remove('open open-active');
         //     }
         // }
@@ -170,7 +169,7 @@
 
         panels.forEach(panel => panel.addEventListener('transitionend', toggleActive, false));
 
-       // panels.forEach(panel => panel.addEventListener('click', toggleClose, false));
+      // panels.forEach(panel => panel.addEventListener('click', toggleClose, false));
 
 
 
