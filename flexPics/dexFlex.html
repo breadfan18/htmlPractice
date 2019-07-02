@@ -143,16 +143,13 @@
         const panels = document.querySelectorAll('.panel');
 
         function toggleOpen () {
-            console.log(this);
-            let nnn = Array.prototype.indexOf.call(panels, this);
-            console.log(nnn);
+            let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
             this.classList.toggle('open');
             let test = this.classList.item(1);
             console.log(test);
             let currentP = document.querySelector("." + test + " > p:nth-child(2)");
             console.log(currentP.innerHTML);
-            currentP.toggleAttribute(replaceMidText[nnn]);
-
+            currentP.innerHTML = replaceMidText[indexOfCurrentPanel];
         }
         
         function toggleActive (e) {
