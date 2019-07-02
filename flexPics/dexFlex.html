@@ -140,16 +140,16 @@
     </div>
     <script>
         const replaceMidText = ["What", "My", "Is", "Is", "Nein"];
+        const resetBackText = ["These", "Are", "My", "Favorite", "Movies"];
+
         const panels = document.querySelectorAll('.panel');
 
         function toggleOpen () {
             let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
             this.classList.toggle('open');
-            let test = this.classList.item(1);
-            console.log(test);
-            let currentP = document.querySelector("." + test + " > p:nth-child(2)");
-            console.log(currentP.innerHTML);
-            currentP.innerHTML = replaceMidText[indexOfCurrentPanel];
+            let currentPanelClassName = this.classList.item(1);
+            let currentMiddlePElement = document.querySelector("." + currentPanelClassName + " > p:nth-child(2)");
+            currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel];
         }
         
         function toggleActive (e) {
