@@ -143,10 +143,11 @@
         const panels = document.querySelectorAll('.panel');
 
         function toggleOpen () {
+            console.log(this);
             this.classList.toggle('open');
             let test = this.classList.item(1);
-            let currentPanel = document.querySelector("." + test + " ");
-            console.log(currentPanel);
+            // let currentPanel = document.querySelector("." + test + " ");
+            // console.log(currentPanel);
             //console.log(test);
             let currentP = document.querySelector("." + test + " > p:nth-child(2)");
             console.log(currentP.innerHTML);
