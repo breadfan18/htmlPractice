@@ -155,6 +155,10 @@
         function toggleActive (e) {
             if (e.propertyName.includes('flex')) {
                 this.classList.toggle('open-active');
+                let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
+                let currentPanelClassName = this.classList.item(1);
+                let currentMiddlePElement = document.querySelector("." + currentPanelClassName + " > p:nth-child(2)");
+                currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
             }
         }
 
