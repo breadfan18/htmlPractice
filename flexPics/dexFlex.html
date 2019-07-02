@@ -144,8 +144,11 @@
 
         function toggleOpen () {
             console.log(this);
+            let nnn = Array.prototype.indexOf.call(this, panels);
+            console.log(nnn);
             this.classList.toggle('open');
             let test = this.classList.item(1);
+            console.log(test);
             let currentP = document.querySelector("." + test + " > p:nth-child(2)");
             console.log(currentP.innerHTML);
             //currentP.innerHTML = replaceMidText[panels.indexOf(currentP)];
