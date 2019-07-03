@@ -159,7 +159,9 @@
                 if (this.className.includes('open')) {
                     let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
                     let currentMiddlePElement = document.querySelector("." + this.classList.item(1) + " > p:nth-child(2)");
-                    currentMiddlePElement.innerHTML === resetBackText[indexOfCurrentPanel] ? currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel] : currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
+                    currentMiddlePElement.innerHTML === resetBackText[indexOfCurrentPanel] ?
+                        currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel] :
+                            currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
                 }
             }
         }
