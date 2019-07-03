@@ -161,11 +161,13 @@
                     let currentMiddlePElement = document.querySelector("." + this.classList.item(1) + " > p:nth-child(2)");
                     currentMiddlePElement.innerHTML === resetBackText[indexOfCurrentPanel] ?
                         currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel] :
-                            currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
+                        currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
+
+                    //the above ternary operator is the same as writing and if else condition like below:
+
                 }
             }
         }
-
 
         panels.forEach(panel => panel.addEventListener('click', toggleOpen, false));
 
