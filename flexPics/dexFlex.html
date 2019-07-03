@@ -158,8 +158,7 @@
             for (let i = 0; i < panels.length; i++) {
                 if (this.className.includes('open')) {
                     let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
-                    let currentPanelClassName = this.classList.item(1);
-                    let currentMiddlePElement = document.querySelector("." + currentPanelClassName + " > p:nth-child(2)");
+                    let currentMiddlePElement = document.querySelector("." + this.classList.item(1) + " > p:nth-child(2)");
                     currentMiddlePElement.innerHTML === resetBackText[indexOfCurrentPanel] ? currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel] : currentMiddlePElement.innerHTML = resetBackText[indexOfCurrentPanel];
                 }
             }
