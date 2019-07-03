@@ -146,10 +146,6 @@
 
         function toggleOpen () {
             this.classList.toggle('open');
-            let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
-            let currentPanelClassName = this.classList.item(1);
-            let currentMiddlePElement = document.querySelector("." + currentPanelClassName + " > p:nth-child(2)");
-            currentMiddlePElement.innerHTML = replaceMidText[indexOfCurrentPanel];
         }
         
         function toggleActive (e) {
@@ -160,7 +156,7 @@
 
         function toggleText(){
             for (let i = 0; i < panels.length; i++) {
-                if (this.className.includes('open-active')) {
+                if (this.className.includes('open')) {
                     let indexOfCurrentPanel = Array.prototype.indexOf.call(panels, this);
                     let currentPanelClassName = this.classList.item(1);
                     let currentMiddlePElement = document.querySelector("." + currentPanelClassName + " > p:nth-child(2)");
