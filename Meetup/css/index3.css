@@ -1,8 +1,9 @@
 body {
-    font: normal normal normal 18px/19.8px Tahoma, Verdana, Arial, sans-serif;
+    font: normal normal normal 12pt/19.8pt Tahoma, Verdana, Arial, sans-serif;
 }
 
 header {
+    /*em means relative to the default font size*/
     font-size: 2em;
     font-weight: bold;
     padding-bottom: 1em;
