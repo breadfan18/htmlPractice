@@ -20,6 +20,11 @@ function load(pidx) {
     imgCtrl.src = imgs[pidx].src;
 }
 
-var next = () => {idx = (idx === 8) ? 0 : idx+1; load(idx);};
-var prev = () => {idx = (idx === 0) ? 8 : idx-1; load(idx);};
+function next () {
+    idx = (idx === 8) ? 0 : idx+1; load(idx);
+}
+
+function prev () {
+    idx = (idx === 0) ? 8 : idx-1; load(idx);
+}
 
