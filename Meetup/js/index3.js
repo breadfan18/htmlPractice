@@ -8,7 +8,7 @@ for (let i = 0; i <=8; i++) {
     imgs.push(img);
 }
 
-var idx = 0;
+let idx = 0;
 
 
 function loaded() {
