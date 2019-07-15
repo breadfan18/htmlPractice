@@ -1,6 +1,6 @@
-let paris = document.querySelector('.paris');
-let tokyo = document.querySelector('.tokyo');
-let london = document.querySelector('.london');
+let paris = document.querySelector('.cityList li:nth-child(2) > a');
+let tokyo = document.querySelector('.cityList li:nth-child(3) > a');
+let london = document.querySelector('.cityList li:nth-child(1) > a');
 
 function showParis() {
     paris.style.display = "block";
