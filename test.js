@@ -30,3 +30,5 @@ parisLink.addEventListener('click', showParis, false);
 tokyoLink.addEventListener('click', showTokyo, false);
 londonLink.addEventListener('click', showLondon, false);
 
+//think of ways to do this with just one function???
+
