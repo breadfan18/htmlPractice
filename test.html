@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Practice html layout</title>
+    <script src="test.js" defer></script>
     <style>
         * {
             box-sizing: border-box;
@@ -67,7 +68,7 @@
 
     <section>
         <nav>
-            <ul>
+            <ul class = "cityList">
                 <li><a href="#">London</a></li>
                 <li><a href="#">Paris</a></li>
                 <li><a href="#">Tokyo</a></li>
@@ -99,19 +100,5 @@
     <footer>
         <p>Footer</p>
     </footer>
-    <script>
-        const paris = document.querySelector('.paris');
-        const tokyo = document.querySelector('.tokyo');
-        const london = document.querySelector('.london');
-
-        function showParis() {
-            paris.style.display = "block";
-            london.style.display = "none";
-            console.log("test");
-        }
-
-        paris.addEventListener('click', showParis, false);
-
-    </script>
 </body>
 </html>
