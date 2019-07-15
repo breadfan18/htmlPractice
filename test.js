@@ -1,11 +1,20 @@
-let paris = document.querySelector('.cityList li:nth-child(2) > a');
-let tokyo = document.querySelector('.cityList li:nth-child(3) > a');
-let london = document.querySelector('.cityList li:nth-child(1) > a');
+const parisLink = document.querySelector('.cityList li:nth-child(2) > a');
+const tokyoLink = document.querySelector('.cityList li:nth-child(3) > a');
+const londonLink = document.querySelector('.cityList li:nth-child(1) > a');
+
+const parisPage = document.querySelector('.paris');
+const tokyoPage = document.querySelector('.tokyo');
+const londonPage = document.querySelector('.london');
+
+
 
 function showParis() {
-    paris.style.display = "block";
-    london.style.display = "none";
+    parisPage.style.display = "block";
+    londonPage.style.display = "none";
     console.log("test");
 }
 
-paris.addEventListener('click', showParis, false);
+parisLink.addEventListener('click', showParis, false);
+tokyoLink.addEventListener('click', showParis, false);
+londonLink.addEventListener('click', showParis, false);
+
