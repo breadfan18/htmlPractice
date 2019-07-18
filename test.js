@@ -14,12 +14,14 @@ function showParis(e) {
     tokyoPage.style.display = "none";
     e.preventDefault()
 }
+
 function showTokyo(e) {
     tokyoPage.style.display = "block";
     londonPage.style.display = "none";
     parisPage.style.display = "none";
     e.preventDefault()
 }
+
 function showLondon(e) {
     londonPage.style.display = "block";
     parisPage.style.display = "none";
