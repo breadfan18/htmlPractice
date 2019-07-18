@@ -8,22 +8,23 @@ const londonPage = document.querySelector('.london');
 
 
 
-function showParis() {
+function showParis(e) {
     parisPage.style.display = "block";
     londonPage.style.display = "none";
     tokyoPage.style.display = "none";
+    e.preventDefault()
 }
-
-function showTokyo() {
+function showTokyo(e) {
     tokyoPage.style.display = "block";
     londonPage.style.display = "none";
     parisPage.style.display = "none";
+    e.preventDefault()
 }
-
-function showLondon() {
+function showLondon(e) {
     londonPage.style.display = "block";
     parisPage.style.display = "none";
     tokyoPage.style.display = "none";
+    e.preventDefault()
 }
 
 parisLink.addEventListener('click', showParis, false);
