@@ -17,8 +17,8 @@ function getCity() {
     navPanel.addEventListener('click',
         function(e) {
                     let test = e.target;
-                    return test.innerText;
-                }, false);
+            console.log(test.innerText);
+        }, false);
 
 
 }
