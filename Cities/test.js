@@ -3,20 +3,30 @@ const tokyoLink = document.querySelector('.cityList li:nth-child(3) > a');
 const londonLink = document.querySelector('.cityList li:nth-child(1) > a');
 const ktmLink = document.querySelector('.cityList li:nth-child(4) > a');
 
+const navPanel = document.querySelector('nav');
+
+
 const parisPage = document.querySelector('.paris');
 const tokyoPage = document.querySelector('.tokyo');
 const londonPage = document.querySelector('.london');
 const ktmPage = document.querySelector('.ktm');
 
+getCity();
+
 function getCity() {
-    let target;
-    document.addEventListener('click', (e) => {
-       target = e.target || e.srcElement;
-    })
+    navPanel.addEventListener('click',
+        function(e) {
+                    let test = e.target;
+                    return test.innerText;
+                }, false);
+
+
 }
 
-let city = getCity();
-console.log(city);
+
+
+
+
 
 function showParis(e) {
     parisPage.style.display = "block";
