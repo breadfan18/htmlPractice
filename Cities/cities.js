@@ -1,10 +1,4 @@
-const parisLink = document.querySelector('.cityList li:nth-child(2) > a');
-const tokyoLink = document.querySelector('.cityList li:nth-child(3) > a');
-const londonLink = document.querySelector('.cityList li:nth-child(1) > a');
-const ktmLink = document.querySelector('.cityList li:nth-child(4) > a');
-
 const navPanel = document.querySelector('nav');
-
 
 const parisPage = document.querySelector('.paris');
 const tokyoPage = document.querySelector('.tokyo');
