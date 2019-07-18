@@ -8,8 +8,6 @@ const tokyoPage = document.querySelector('.tokyo');
 const londonPage = document.querySelector('.london');
 const ktmPage = document.querySelector('.ktm');
 
-
-
 function showParis(e) {
     parisPage.style.display = "block";
     londonPage.style.display = "none";
