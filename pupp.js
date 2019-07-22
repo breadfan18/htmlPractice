@@ -1,7 +1,10 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch({
+        headless: false,
+        slowMo: 250
+    });
     const page = await browser.newPage();
     await page.goto('http://app-test.kroger.com/app#/');
 
