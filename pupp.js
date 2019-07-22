@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer');
 (async () => {
     const browser = await puppeteer.launch({
         headless: false,
-        slowMo: 250
+        slowMo: 350
     });
     const page = await browser.newPage();
     await page.goto('http://www.google.com');
@@ -22,10 +22,10 @@ const puppeteer = require('puppeteer');
     // const submitButton = await page.$("input[type='submit']");
     // await submitButton.click();
 
-    const [response] = await Promise.all([
-        page.waitForNavigation(),
-        page.once('load', () => console.log('loaded')),
-    ]);
+    // const [response] = await Promise.all([
+    //     page.waitForNavigation(),
+    //     page.once('load', () => console.log('loaded')),
+    // ]);
 
 
 
