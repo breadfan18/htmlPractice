@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
     const adminLink = await page.$("a[href = '/app/admin']");
     await adminLink.click();
 
-    const userNameField = document.querySelector('#KWUSER');
+    const userNameField = await page.$('#KSWUSER');
     await userNameField.type('su23140');
     const pwdField = await page.$('#PWD');
     await pwdField.type('Ktmmata35');
