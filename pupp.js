@@ -6,17 +6,21 @@ const puppeteer = require('puppeteer');
         slowMo: 250
     });
     const page = await browser.newPage();
-    await page.goto('http://app-test.kroger.com/app#/');
+    await page.goto('http://www.google.com');
 
-    const adminLink = await page.$("a[href = '/app/admin']");
-    await adminLink.click();
+    const searchBox = await page.$('input[type=text]');
+    await searchBox.type('cookies');
 
-    const userNameField = await page.$("input[type='text']");
-    await userNameField.type('su23140');
-    const pwdField = await page.$('#PWD');
-    await pwdField.type('Ktmmata35');
-    const submitButton = await page.$("input[type='submit']");
-    await submitButton.click();
+
+    // const adminLink = await page.$("a[href = '/app/admin']");
+    // await adminLink.click();
+    //
+    // const userNameField = await page.$("input[type='text']");
+    // await userNameField.type('su23140');
+    // const pwdField = await page.$('#PWD');
+    // await pwdField.type('Ktmmata35');
+    // const submitButton = await page.$("input[type='submit']");
+    // await submitButton.click();
 
     const [response] = await Promise.all([
         page.waitForNavigation(),
