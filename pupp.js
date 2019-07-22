@@ -12,11 +12,17 @@ const puppeteer = require('puppeteer');
     await userNameField.type('su23140');
     const pwdField = await page.$('#PWD');
     await pwdField.type('Ktmmata35');
+    const submitButton = await page.$("input[type='submit']");
+    await submitButton.click();
+
+    const [response] = await Promise.all([
+        page.waitForNavigation(),
+        page.once('load', () => console.log('loaded')),
+    ]);
 
 
 
-
-    await page.screenshot({path: 'Cities/test.png'});
+    await page.screenshot({path: 'test.png'});
 
     await browser.close();
 })();
