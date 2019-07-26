@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/Cellar/node@10/10.16.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/opt/node@10/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/su23140/Developer/Git/htmlPractice/node_modules/.bin:/Users/su23140/Library/Python/2.7/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/su23140/Developer/Git/htmlPractice/package.json: Unexpected token } in JSON at position 561
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "htmlpractice",
+    "version": "1.0.0",
+    "description": "html practice",
+    "main": "pupp.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/breadfan18/htmlPractice.git"
+    },
+    "author": "swaroop",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/breadfan18/htmlPractice/issues"
+    },
+    "dependencies": {
+      "puppeteer": "^1.18.1",
+      "webdriverio": "~4.12.0"
+    },
+    "homepage": "https://github.com/breadfan18/htmlPractice#readme",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
