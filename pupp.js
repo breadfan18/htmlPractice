@@ -32,6 +32,7 @@ const puppeteer = require('puppeteer');
     await page.screenshot({path: 'test.png'});
 
     await browser.close();
+    console.log('test');
 })();
 
 // global.driver = require('@envolvilo/core')();
