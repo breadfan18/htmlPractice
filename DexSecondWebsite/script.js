@@ -4,6 +4,9 @@ let slideshowPlaying = false;
 let timeout;
 let currentSlide;
 const images = document.querySelectorAll(".mySlides");
+const galleryContainer = document.querySelector(".galleryContainer");
+
+
 addDots();
 const dotsList = document.querySelectorAll('.dots');
 
@@ -83,6 +86,10 @@ function pauseSlideshow() {
     autoIndex = 0;
     }
 }
+
+window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+});
 
 // function clickDotsToChangeImg(dotIndex) {
 //     manualSlideShow(dotIndex);
