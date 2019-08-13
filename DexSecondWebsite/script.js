@@ -89,8 +89,8 @@ function pauseSlideshow() {
 
 
 //below code trying to get left and right arrow keys to change the images in the slideshow..right now just trying to
-//find out way to get any key events for a given element, in this case gallery container.
-galleryContainer.onkeydown = function (e) {
+//find out way to get any key events for a given element, in this case gallery container. document works for
+document.onkeydown = function (e) {
     e = e || galleryContainer.event;
     switch (e.keyCode) {
         case 37:
