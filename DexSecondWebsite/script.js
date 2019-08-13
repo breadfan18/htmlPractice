@@ -4,7 +4,7 @@ let slideshowPlaying = false;
 let timeout;
 let currentSlide;
 const images = document.querySelectorAll(".mySlides");
-const galleryContainer = document.querySelector(".galleryContainer");
+const galleryContainer = document.querySelector(".slideshow-container");
 
 
 addDots();
@@ -87,10 +87,24 @@ function pauseSlideshow() {
     }
 }
 
-window.addEventListener('keyup', (e) => {
-    console.log(e.key);
-});
 
+//below code trying to get left and right arrow keys to change the images in the slideshow..right now just trying to
+//find out way to get any key events for a given element, in this case gallery container.
+galleryContainer.onkeydown = function (e) {
+    e = e || galleryContainer.event;
+    switch (e.keyCode) {
+        case 37:
+            console.log("Left");
+            break;
+        case 39:
+            console.log("Right");
+            break;
+    }
+};
+
+// window.addEventListener('keyup', (e) => {
+//     console.log(e.keyCode);
+// });
 // function clickDotsToChangeImg(dotIndex) {
 //     manualSlideShow(dotIndex);
 // }
