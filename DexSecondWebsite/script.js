@@ -11,6 +11,7 @@ addDots();
 const dotsList = document.querySelectorAll('.dots');
 
 
+
 //next step is to show the right photo when each dot is clicked. need to see how to do that..think!!!
 
 manualSlideShow(slideIndex);
