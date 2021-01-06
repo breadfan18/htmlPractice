@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <link href="/normalize.css" rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background: url('https://i.imgur.com/TPiVIRd.png');
+            background-size: cover;
+            color: white;
+        }
+        a {
+            color: white;
+        }
+        h1 {
+            font-size: 70px;
+            text-shadow: 5px 5px 5px gray;
+        }
+        img {
+            max-height: 200px;
+            max-width: 500px;
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 20px;
+        }
+        ul.menu {
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+        }
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+            li {
+                padding: 5px;
+                display: block;
+            }
+
+            li.likesCount{
+                font-size: 100px;
+            }
+        }
+
+        button {
+            padding: 20px;
+            background: transparent;
+            text-shadow: 1px 1px 1px gray;
+            font-family: "Lato", sans-serif;
+            font-size: 18pt;
+            border: 1px solid gray;
+            color: #f000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://i.imgur.com/vQLCaBr.jpg?1">
+    <h1>Dexter's Dog Quotes Rating</h1>
+    <ul class="menu">
+        <li><a href="https://en.wikipedia.org/wiki/Dexter%27s_Laboratory">About Dex</a></li>
+        <li><a href="https://www.akc.org/">AKC</a></li>
+        <li><a href="https://bestfriends.org/donate">Donate</a></li>
+    </ul>
+</header>
+<article>
+    <h2>"If you don't own a dog, at least one, there may not necessarily be anything wrong with you, but there may be something wrong with your life."</h2>
+    <p>Roger Caras</p>
+
+    <button id="likeCount1">Like: 0</button>
+
+</article>
+<article>
+    <h2>"I am fond of pigs. Dogs look up to us. Cats look down on us. Pigs treat us as equals."</h2>
+    <p>Winston Churchhill</p>
+    <button id="likeCount2">Like: 0</button>
+</article>
+<article>
+    <h2>"The better I get to know men, the more I find myself loving dogs."</h2>
+    <p>Charles De Gaulle</p>
+    <button id="likeCount3">Like: 0</button>
+
+
+</article>
+<article>
+    <h2>"Dogs do speak, but only to those who know how to listen."</h2>
+    <p> Orphan Pamuk (author, My Name is Red)</p>
+    <button id="likeCount4">Like: 0</button>
+
+</article>
+<script>
+    // $("button").on("click", function() {
+    //     alert("Clicked!");
+    // });
+
+    var clicks1 = 0;
+    var clicks2 = 0;
+    var clicks3 = 0;
+    var clicks4 = 0;
+    var likeButton1 = document.getElementById("likeCount1");
+    var likeButton2 = document.getElementById("likeCount2"), count = 0;
+    var likeButton3 = document.getElementById("likeCount3"), count = 0;
+    var likeButton4 = document.getElementById("likeCount4"), count = 0;
+
+    likeButton1.onclick = function () {
+        clicks1 += 1;
+        likeButton1.style.background = "gray";
+        likeButton1.style.color = "white";
+        likeButton1.innerHTML = "Like: " + clicks1;
+    };
+    likeButton2.onclick = function () {
+        clicks2 += 1;
+        likeButton2.style.background = "gray";
+        likeButton2.style.color = "white";
+        likeButton2.innerHTML = "Like: " + clicks2;
+    };
+    likeButton3.onclick = function () {
+        clicks3 += 1;
+        likeButton3.style.background = "gray";
+        likeButton3.style.color = "white";
+        likeButton3.innerHTML = "Like: " + clicks3;
+    };
+    likeButton4.onclick = function () {
+        clicks4 += 1;
+        likeButton4.style.background = "gray";
+        likeButton4.style.color = "white";
+        likeButton4.innerHTML = "Like: " + clicks4;
+    };
+
+
+
+</script>
+</body>
