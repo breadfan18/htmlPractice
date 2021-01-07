@@ -4,7 +4,7 @@ const education = document.querySelector('.myEducation');
 const work = document.querySelector('.myWork');
 const hobbies = document.querySelector('.myHobbies');
 const origin = document.querySelector('.origin');
-const sanFran = document.querySelector('.sanFrancisco');
+const sanFran = document.querySelector('.myGoals');
 const intro = document.querySelector('.intro');
 
 getCity();
@@ -40,7 +40,7 @@ function getCity() {
                 sanFran.style.display = "none";
                 intro.style.display = "none";
             }
-            else if (clickedSection.innerText === "Hobbies") {
+            else if (clickedSection.innerText === "My Band") {
                 family.style.display = "none";
                 education.style.display = "none";
                 work.style.display = "none";
@@ -58,7 +58,7 @@ function getCity() {
                 sanFran.style.display = "none";
                 intro.style.display = "none";
             }
-            else if (clickedSection.innerText === "San Francisco") {
+            else if (clickedSection.innerText === "My Goals") {
                 family.style.display = "none";
                 education.style.display = "none";
                 work.style.display = "none";

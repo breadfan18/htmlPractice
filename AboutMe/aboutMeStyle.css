@@ -3,6 +3,7 @@
 }
 
 body {
+    background: url("images/bkgrd.jpg");
     max-width: 1000px;
     margin: 0 auto;
     font-family: 'Big Shoulders Stencil Text', cursive;
@@ -23,6 +24,7 @@ header img {
     height: 180px;
     width: 180px;
     border: solid white 7px;
+    box-shadow: 0 0 3px #fff;
     border-radius: 10%;
     float: left;
     bottom: 0;
@@ -40,7 +42,7 @@ section {
 }
 
 nav {
-    background-color: #dddddd;
+    background-color: rgba(0,0,0,0.1);
     color: #ffffff;
     padding: 0 0 0 0;
     flex: 0 0 20em; /*em is a unit of font that's adaptive to screen size, rather than px which is fixed*/
@@ -67,12 +69,12 @@ nav ul li {
 /*}*/
 
 .aboutMeSections li:nth-child(odd) {
-    background-color: #bbbbbb;
+    background-color: rgba(0,0,0,0.1);
 }
 
 .aboutMeSections li:nth-child(even) {
     /*transition: 0.6s ease;*/
-    background-color: white;
+    background-color: rgba(255,255,255,0.1);
 }
 
 .aboutMeSections li a:hover {
@@ -99,16 +101,13 @@ article div img {
     width: 565px;
     height: 362px;
 }
+article div .goals {
+    height: 200px;
+    width: 565px;
+}
 p {
     font-family: 'Big Shoulders Stencil Text', cursive;
 }
-
-
-
-
-
-
-
 
 footer ul {
     background-color: rgba(0,0,0,0.1);
