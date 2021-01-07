@@ -3,28 +3,36 @@
 }
 
 body {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
 }
 
 header {
     background: url("images/DexAndMeUtah.jpg");
     background-size: cover;
-    height: 200px;
+    height: 300px;
     color: white;
-    text-align: center ;
+    text-align: end ;
     font-size: 20px;
-    padding: 40px;
+    padding: 100px 15px 0 30px;
 }
 
 header img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border: solid white 7px;
     border-radius: 10%;
+    float: left;
+    bottom: 0;
+
 }
 
+header h1 {
+    font-size: 100px;
+    text-shadow: 2px 2px #0F1B2C ;
+}
 
 section {
     display: flex;
@@ -36,6 +44,10 @@ nav {
     color: #ffffff;
     padding: 0 0 0 0;
     flex: 0 0 20em; /*em is a unit of font that's adaptive to screen size, rather than px which is fixed*/
+}
+
+nav ul li {
+    font-weight: bold;
 }
 
 .aboutMeSections {
@@ -75,8 +87,13 @@ article {
 }
 
 article div {
-    /*display: none;*/
+    display: none;
 }
+
+.intro {
+    display: block;
+}
+
 
 article div img {
     width: 565px;
