@@ -16,7 +16,6 @@ header {
     height: 300px;
     color: white;
     text-align: end ;
-    font-size: 20px;
     padding: 100px 15px 0 30px;
 }
 
@@ -28,7 +27,6 @@ header img {
     border-radius: 10%;
     float: left;
     bottom: 0;
-
 }
 
 header h1 {
@@ -64,10 +62,6 @@ nav ul li {
     display: block;
 }
 
-/*.aboutMeSections li {*/
-/*    position: relative;*/
-/*}*/
-
 .aboutMeSections li:nth-child(odd) {
     background-color: rgba(0,0,0,0.1);
 }
@@ -96,17 +90,32 @@ article div {
     display: block;
 }
 
+.introDesc{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    font-weight: bold;
+    list-style: none;
+}
+
+
+/*article div img {*/
+/*    width: 565px;*/
+/*    height: 362px;*/
+/*}*/
 
 article div img {
-    width: 565px;
-    height: 362px;
+    width: 100%;
+    max-width: 565px;
+    height: auto;
 }
 article div .goals {
     height: 200px;
     width: 565px;
 }
 p {
-    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer ul {
@@ -134,5 +143,15 @@ footer ul li:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 860px) {
+    header h1{
+       font-size: 60px;
+        float: bottom;
+        bottom: 0;
+    }
 
+    nav {
+        max-width: 200px;
+    }
 
+}
