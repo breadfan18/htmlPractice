@@ -55,7 +55,7 @@ function manualSlideShow(n) {
         dotsList[j].style.backgroundColor = "grey";
     }
     images[slideIndex - 1].style.display = "block";
-    dotsList[slideIndex -1].style.backgroundColor = "hotpink";
+    // dotsList[slideIndex -1].style.backgroundColor = "hotpink";
 }
 
 function plusSlides(n) {
@@ -135,59 +135,52 @@ const choices = ["Lapis", "Papyrus", "Scalpellus"];
 
 
 function computerChooses() {
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    computer.currentChoice = choices[randomIndex];
+    return Math.floor(Math.random() * choices.length);
 }
 
-computerChooses();
-
+computer.currentChoice = choices[computerChooses()];
 player.currentChoice = choices[1];
 
+
+function display(winningMessage) {
+    const winningMessageElement = document.createElement("h2");
+    winningMessageElement.innerText = winningMessage;
+    document.body.appendChild(winningMessageElement);
+}
 
 function compareChoices(computerChoice, playerChoice) {
     if (computerChoice === choices[0]) {
         if (playerChoice === choices[1]) {
-            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else if (playerChoice === choices[2]) {
-            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else {
-            console.log("It's a tie!");
+            display("It's a tie!");
         }
     }
 
     if (computerChoice === choices[1]) {
         if (playerChoice === choices[0]) {
-            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else if (playerChoice === choices[2]) {
-            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+           display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
         } else {
-            console.log("It's a tie!");
+            display("It's a tie!");
         }
     }
 
     if (computerChoice === choices[2]) {
         if (playerChoice === choices[0]) {
-            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else if (playerChoice === choices[1]) {
-            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
         } else {
-            console.log("It's a tie!");
+            display("It's a tie!");
         }
     }
 }
 
 compareChoices(computer.currentChoice, player.currentChoice);
-
-// PROBLEM 4
-// Write a function that finds the maximum number in a given array.
-// Loop through the array and keep track of the biggest number seen so far.
-// Once the loop is over, return the biggest number in the array.
-
-
-
-
-
-
 
 
 
