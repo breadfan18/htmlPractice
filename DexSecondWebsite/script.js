@@ -7,10 +7,10 @@ const images = document.querySelectorAll(".mySlides");
 const galleryContainer = document.querySelector(".slideshow-container");
 
 
+
+
 addDots();
-const dotsList = document.querySelectorAll('.dots');
-
-
+const dotsList = document.querySelector('.dots');
 
 //next step is to show the right photo when each dot is clicked. need to see how to do that..think!!!
 
@@ -116,6 +116,75 @@ document.onkeydown = function (e) {
 //
 //
 // eachDot.addEventListener('click', clickDotsToChangeImg, false);
+
+
+
+// This variable will keep track of what the player chooses.
+// It starts off as null, which means specifically "nothing," because the user hasn't chosen anything when the game starts.
+let player = {
+    currentChoice: null
+};
+
+// This variable keeps track of what the computer chooses.
+let computer = {
+    currentChoice: null
+};
+
+// The following three variables store the three options users can choose between.
+const choices = ["Lapis", "Papyrus", "Scalpellus"];
+
+
+function computerChooses() {
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    computer.currentChoice = choices[randomIndex];
+}
+
+computerChooses();
+
+player.currentChoice = choices[1];
+
+
+function compareChoices(computerChoice, playerChoice) {
+    if (computerChoice === choices[0]) {
+        if (playerChoice === choices[1]) {
+            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+        } else if (playerChoice === choices[2]) {
+            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+        } else {
+            console.log("It's a tie!");
+        }
+    }
+
+    if (computerChoice === choices[1]) {
+        if (playerChoice === choices[0]) {
+            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+        } else if (playerChoice === choices[2]) {
+            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+        } else {
+            console.log("It's a tie!");
+        }
+    }
+
+    if (computerChoice === choices[2]) {
+        if (playerChoice === choices[0]) {
+            console.log("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+        } else if (playerChoice === choices[1]) {
+            console.log("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+        } else {
+            console.log("It's a tie!");
+        }
+    }
+}
+
+compareChoices(computer.currentChoice, player.currentChoice);
+
+// PROBLEM 4
+// Write a function that finds the maximum number in a given array.
+// Loop through the array and keep track of the biggest number seen so far.
+// Once the loop is over, return the biggest number in the array.
+
+
+
 
 
 

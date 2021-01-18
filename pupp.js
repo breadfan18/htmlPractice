@@ -12,6 +12,8 @@ const puppeteer = require('puppeteer');
     await searchBox.type('cookies');
 
 
+
+
     // const adminLink = await page.$("a[href = '/app/admin']");
     // await adminLink.click();
     //
