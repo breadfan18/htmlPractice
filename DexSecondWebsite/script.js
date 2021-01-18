@@ -117,7 +117,7 @@ document.onkeydown = function (e) {
 //
 // eachDot.addEventListener('click', clickDotsToChangeImg, false);
 
-
+//----------------------------------------------------------------------------------------------------------------------
 
 // This variable will keep track of what the player chooses.
 // It starts off as null, which means specifically "nothing," because the user hasn't chosen anything when the game starts.
