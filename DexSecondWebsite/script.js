@@ -151,6 +151,8 @@ function display(winningMessage) {
 function compareChoices(computerChoice, playerChoice) {
     if (computerChoice === choices[0]) {
         if (playerChoice === choices[1]) {
+            let winner = "Player";
+            let loser = "Computer";
             display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else if (playerChoice === choices[2]) {
             display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
@@ -163,7 +165,7 @@ function compareChoices(computerChoice, playerChoice) {
         if (playerChoice === choices[0]) {
             display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
         } else if (playerChoice === choices[2]) {
-           display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
         } else {
             display("It's a tie!");
         }
