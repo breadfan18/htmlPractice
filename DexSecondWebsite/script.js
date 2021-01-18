@@ -142,42 +142,40 @@ computer.currentChoice = choices[computerChooses()];
 player.currentChoice = choices[1];
 
 
-function display(winningMessage) {
+function display(winner, computerChoice, playerChoice) {
     const winningMessageElement = document.createElement("h2");
-    winningMessageElement.innerText = winningMessage;
+    winningMessageElement.innerText = winner + " wins! The computer chose " + computerChoice + " and the player chose " + playerChoice;
     document.body.appendChild(winningMessageElement);
 }
 
 function compareChoices(computerChoice, playerChoice) {
     if (computerChoice === choices[0]) {
         if (playerChoice === choices[1]) {
-            let winner = "Player";
-            let loser = "Computer";
-            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Player", computerChoice, playerChoice);
         } else if (playerChoice === choices[2]) {
-            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Computer", computerChoice, playerChoice);
         } else {
-            display("It's a tie!");
+            display("It's a tie!" + "Both player and computer chose " + computerChoice);
         }
     }
 
     if (computerChoice === choices[1]) {
         if (playerChoice === choices[0]) {
-            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Computer", computerChoice, playerChoice);
         } else if (playerChoice === choices[2]) {
-            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+            display("Player", computerChoice, playerChoice);
         } else {
-            display("It's a tie!");
+            display("It's a tie!" + "Both player and computer chose " + computerChoice);
         }
     }
 
     if (computerChoice === choices[2]) {
         if (playerChoice === choices[0]) {
-            display("Player wins! The computer chose " + computerChoice + " and the player chose " + playerChoice);
+            display("Player", computerChoice, playerChoice);
         } else if (playerChoice === choices[1]) {
-            display("Computer wins! The computer chose " + computerChoice + " and the player chose " + playerChoice)
+            display("Computer", computerChoice, playerChoice);
         } else {
-            display("It's a tie!");
+            display("It's a tie!" + "Both player and computer chose " + computerChoice);
         }
     }
 }
