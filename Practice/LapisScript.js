@@ -68,7 +68,15 @@ function compareChoices(computerChoice, playerChoice) {
 
 compareChoices(computer.currentChoice, player.currentChoice);
 
+function setPlayerChoice(e) {
+    let choiceMade = choices.indexOf(e.target.innerText);
+    console.log(choices[choiceMade]);
+    player.currentChoice = choices[choiceMade];
+}
 
+document.querySelector("#lapis").addEventListener("click", setPlayerChoice);
+document.querySelector("#papyrus").addEventListener("click", setPlayerChoice);
+document.querySelector("#scalpellus").addEventListener("click", setPlayerChoice);
 
 
 
