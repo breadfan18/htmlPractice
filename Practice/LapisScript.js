@@ -19,9 +19,10 @@ function computerChooses() {
 
 computer.currentChoice = choices[computerChooses()];
 
+const winningMessageElement = document.createElement("h2");
+winningMessageElement.setAttribute("class", "displayText");
 
 function display(winner, computerChoice, playerChoice) {
-    const winningMessageElement = document.createElement("h2");
     if (winner === "It's a tie!") {
         winningMessageElement.innerText = "It's a tie! Both player and computer chose " + computerChoice;
     } else {
@@ -72,7 +73,6 @@ function setPlayerChoice(e) {
     compareChoices(computer.currentChoice, player.currentChoice);
 }
 
-// compareChoices(computer.currentChoice, player.currentChoice);
 
 document.querySelector("#lapis").addEventListener("click", setPlayerChoice);
 document.querySelector("#papyrus").addEventListener("click", setPlayerChoice);
