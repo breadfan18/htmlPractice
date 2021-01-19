@@ -28,6 +28,7 @@ button:hover {
 button:focus {
     color: white;
     background: black;
+    border: #6B0F9C;
 }
 
 .displayText {
