@@ -1,6 +1,3 @@
-
-//----------------------------------------------------------------------------------------------------------------------
-
 // This variable will keep track of what the player chooses.
 // It starts off as null, which means specifically "nothing," because the user hasn't chosen anything when the game starts.
 let player = {
@@ -21,7 +18,6 @@ function computerChooses() {
 }
 
 computer.currentChoice = choices[computerChooses()];
-player.currentChoice = choices[2];
 
 
 function display(winner, computerChoice, playerChoice) {
@@ -66,13 +62,17 @@ function compareChoices(computerChoice, playerChoice) {
     }
 }
 
-compareChoices(computer.currentChoice, player.currentChoice);
+
 
 function setPlayerChoice(e) {
     let choiceMade = choices.indexOf(e.target.innerText);
-    console.log(choices[choiceMade]);
     player.currentChoice = choices[choiceMade];
+    console.log(computer.currentChoice);
+    console.log(player.currentChoice);
+    compareChoices(computer.currentChoice, player.currentChoice);
 }
+
+// compareChoices(computer.currentChoice, player.currentChoice);
 
 document.querySelector("#lapis").addEventListener("click", setPlayerChoice);
 document.querySelector("#papyrus").addEventListener("click", setPlayerChoice);
