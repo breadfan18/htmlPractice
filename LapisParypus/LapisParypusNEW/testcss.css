@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Potta One', Helvetica, serif;
+    text-align: center;
+    background: url("https://previews.123rf.com/images/phokin/phokin1706/phokin170600296/80158669-black-and-white-brick-wall-texture-background-brick-wallpaper-abstract-paint-.jpg");
+    background-size: cover;
+}
+
+#welcomeText {
+    text-shadow: 2px 2px #ff0000;
+}
+
+h1 {
+    background-color: #222222;
+    margin: 0 0 25px 0;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    opacity: 80%;
+}
+
+input[type = "text"], #startGame{
+    /*width: 10em;*/
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+#startGame {
+    background: #222222;
+    color: white;
+}
+
+h3 {
+    /*padding: 20px;*/
+    display: none;
+}
+
+
+header, .gameSection, h3 {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gameSection {
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.buttonSegments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.gameImgs {
+    width: 200px;
+    height: 200px;
+}
+
+.buttons {
+    padding: 10px 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
+    font-family: 'Potta One', cursive;
+    margin: 10px 0 0 0;
+    font-size: 25px;
+}
+
+.buttons:hover {
+    color: black;
+    text-shadow: 2px 2px #ff0000;
+    background-color: white;
+    cursor: pointer;
+}
+
+#player, #computer {
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+.buttonSegments:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.buttonSegments:focus {
+    background-color: rgba(122, 0, 0, 0.5);
+}
+
+#gameName {
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.displayText {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 20px;
+}
