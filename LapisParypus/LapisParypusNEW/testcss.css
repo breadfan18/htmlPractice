@@ -126,6 +126,18 @@ header, .gameSection, h3 {
         height: 150px;
     }
 
+    .displayText {
+        font-size: 15px;
+    }
+    #player, #computer, #gameName {
+        font-size: 20px;
+    }
+
+    #welcome {
+        font-size: 15px;
+    }
+
+
     .buttons {
         font-size: 12px;
 
