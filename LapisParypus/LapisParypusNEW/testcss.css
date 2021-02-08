@@ -31,9 +31,8 @@ header img {
 }
 
 input[type = "text"], #startGame{
-    /*width: 10em;*/
     padding: 15px;
-    font-size: 20px;
+    font-size: 6vm;
     border: 1px solid #ccc;
 }
 
@@ -116,11 +115,10 @@ header, .gameSection, h3 {
     padding: 20px;
 }
 
-@media (max-width: 822px) {
-    /*h1 {*/
-    /*    font-size: 25px;*/
-    /*    padding: 20px;*/
-    /*}*/
+@media (max-width: 708px) {
+    h1 {
+        padding: 20px;
+    }
     img {
         width: 100%;
         height: auto;
