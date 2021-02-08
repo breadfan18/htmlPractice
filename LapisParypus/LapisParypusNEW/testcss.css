@@ -14,7 +14,7 @@ h1 {
     padding: 50px;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 6vw;
     color: rgba(255, 0, 0, 0.7);
 
 }
@@ -117,9 +117,17 @@ header, .gameSection, h3 {
 }
 
 @media (max-width: 822px) {
-    h1 {
-        font-size: 25px;
-        padding: 20px;
+    /*h1 {*/
+    /*    font-size: 25px;*/
+    /*    padding: 20px;*/
+    /*}*/
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    #welcome, #player, #gameName {
+        font-size: small;
     }
 
 }
