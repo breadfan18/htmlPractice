@@ -113,6 +113,7 @@ header, .gameSection, h3 {
 .displayText {
     background: rgba(255, 0, 0, 0.1);
     padding: 20px;
+    margin-top: 90px;
 }
 
 @media (max-width: 708px) {
@@ -123,10 +124,6 @@ header, .gameSection, h3 {
     .gameImgs {
         width: 150px;
         height: 150px;
-    }
-
-    #welcome, #player, #gameName {
-        font-size: small;
     }
 
     .buttons {

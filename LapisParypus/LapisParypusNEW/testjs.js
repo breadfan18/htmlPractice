@@ -22,7 +22,7 @@ computer.currentChoice = choices[rand];
 const winningMessageElement = document.createElement("h2");
 winningMessageElement.setAttribute("class", "displayText");
 
-function display(winner, playerName, computerChoice, playerChoice) {
+function displayResult(winner, playerName, computerChoice, playerChoice) {
     if (winner === "Tie") {
         winningMessageElement.innerHTML = "It's a tie!</br> Both <span id='computer'>Computer</span>" + "and <span id='player'>" + playerName + "</span> chose <span id='gameName'>" + computerChoice + "</span>";
     }
@@ -37,24 +37,24 @@ function runGame(playerName, computerChoice, playerChoice) {
     gameButtons.style.display = "flex";
 
     if (computerChoice === playerChoice) {
-        display("Tie", playerName, computerChoice, playerChoice);
+        displayResult("Tie", playerName, computerChoice, playerChoice);
     } else if (computerChoice === choices[0]) {
         if (playerChoice === choices[1]) {
-            display(playerName, playerName, computerChoice, playerChoice);
+            displayResult(playerName, playerName, computerChoice, playerChoice);
         } else if (playerChoice === choices[2]) {
-            display("Computer", playerName, computerChoice, playerChoice);
+            displayResult("Computer", playerName, computerChoice, playerChoice);
         }
     } else if (computerChoice === choices[1]) {
         if (playerChoice === choices[0]) {
-            display("Computer", playerName, computerChoice, playerChoice);
+            displayResult("Computer", playerName, computerChoice, playerChoice);
         } else if (playerChoice === choices[2]) {
-            display(playerName, playerName, computerChoice, playerChoice);
+            displayResult(playerName, playerName, computerChoice, playerChoice);
         }
     } else if (computerChoice === choices[2]) {
         if (playerChoice === choices[0]) {
-            display(playerName, playerName, computerChoice, playerChoice);
+            displayResult(playerName, playerName, computerChoice, playerChoice);
         } else if (playerChoice === choices[1]) {
-            display("Computer", playerName, computerChoice, playerChoice);
+            displayResult("Computer", playerName, computerChoice, playerChoice);
         }
     }
 }
