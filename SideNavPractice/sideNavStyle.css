@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+
+
 body {
-    font-family: Helvetica, Serif, serif;
+    font-family: 'Big Shoulders Display', cursive;
 }
 
 .sidenav {
@@ -9,7 +12,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s ease;
@@ -20,13 +23,29 @@ body {
     text-decoration: none;
     display: block;
     font-size: 30px;
-    padding: 15px;
+    padding: 30px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    background-color: darkgreen;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    transition: 0.5s ease;
+    letter-spacing: 0.3em;
 }
 
 .closebtn {
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 60px;
+    color: white;
+    font-family: Helvetica, serif;
+    margin-bottom: 100px;
 }
 
 .closebtn:hover {
@@ -35,6 +54,7 @@ body {
 
 #hamMenu {
     left: 20px;
+    font-family: Helvetica, serif;
     font-size: 4em;
     font-weight: 800;
     /*z-index: 111;*/

@@ -1,8 +1,8 @@
 function openNav() {
-    document.querySelector("#mySideNav").style.width = "350px";
-    document.querySelector("#main").style.marginLeft = "350px";
+    document.querySelector("#mySideNav").style.width = "450px";
+    document.querySelector("#main").style.marginLeft = "450px";
     document.body.style.backgroundColor = "rgba(0,0,0, 0.4)";
-    document.querySelector("#hamMenu").style.left = "350px";
+    document.querySelector("#hamMenu").style.left = "450px";
     document.querySelector("#hamMenu").style.transform = "rotate(90deg)";
     document.querySelector("#hamMenu").style.color = "#FF9900";
 }
