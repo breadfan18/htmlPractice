@@ -4,13 +4,9 @@ body {
     margin: 0 auto;
     font-family: 'Potta One', Helvetica, serif;
     text-align: center;
-    background: url("https://previews.123rf.com/images/phokin/phokin1706/phokin170600296/80158669-black-and-white-brick-wall-texture-background-brick-wallpaper-abstract-paint-.jpg");
     background-size: cover;
 }
 
-#welcomeText {
-    text-shadow: 2px 2px #ff0000;
-}
 
 h1 {
     background-color: #222222;
@@ -19,6 +15,8 @@ h1 {
     color: white;
     text-align: center;
     font-size: 50px;
+    color: rgba(255, 0, 0, 0.7);
+
 }
 
 header {
