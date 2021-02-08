@@ -119,13 +119,21 @@ header, .gameSection, h3 {
     h1 {
         padding: 20px;
     }
-    img {
-        width: 100%;
-        height: auto;
+
+    .gameImgs {
+        width: 150px;
+        height: 150px;
     }
 
     #welcome, #player, #gameName {
         font-size: small;
     }
+
+    .buttons {
+        font-size: 12px;
+
+    }
+
+
 
 }
