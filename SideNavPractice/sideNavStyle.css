@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica, Serif, serif;
+}
+
 .sidenav {
     height: 100%;
     width: 0px;
@@ -8,7 +12,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .sidenav a {
@@ -25,10 +29,24 @@
     top: 0;
 }
 
-span {
-    font-size: 40px;
+.closebtn:hover {
+    color: #FF9900;
 }
 
-span:hover {
+#hamMenu {
+    left: 20px;
+    font-size: 4em;
+    font-weight: 800;
+    /*z-index: 111;*/
+    cursor: pointer;
+    /*text-align: center;*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.25s;
+    position: absolute;
+}
+
+#hamMenu:hover {
+    transform: rotate(90deg);
+    color: #FF9900;
     cursor: pointer;
 }
