@@ -76,6 +76,13 @@ function setPlayerChoice(e) {
     runGame(playerNameEntered, computer.currentChoice, player.currentChoice);
 }
 
+playerInputField.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        startGameButton.click();
+    }
+});
+
 startGameButton.addEventListener("click", function () {
     playerNameEntered = playerInputField.value;
     if (playerNameEntered === "") {
@@ -88,6 +95,7 @@ startGameButton.addEventListener("click", function () {
         document.querySelector("header").remove();
     }
 }, false);
+
 
 document.querySelector(".gameSection div:nth-child(1)").addEventListener("click", setPlayerChoice, false);
 document.querySelector(".gameSection div:nth-child(2)").addEventListener("click", setPlayerChoice, false);
